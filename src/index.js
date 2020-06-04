@@ -1,5 +1,7 @@
-import frms from './modules/index'
+import { printMsg } from './modules/index'
+import FrmsTextField from './fields/text-field/FrmsTextField'
 
 export {
-  frms
+  printMsg,
+  FrmsTextField
 }

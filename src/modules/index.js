@@ -1,3 +1,3 @@
-export function printMsq() {
+export const printMsg = () => {
   console.log('demo message')
 }
