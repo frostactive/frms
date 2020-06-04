@@ -1,0 +1,68 @@
+{
+  "name": "frms",
+  "version": "1.0.0",
+  "description": "Shared vuejs forms element",
+  "main": "./dist/frms.common.js",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name frms src/index.js",
+    "unit": "vue-cli-service test:unit --testMatch=**/src/**/*.test.js --config test/unit/jest.conf.js --coverage --no-cache",
+    "lint": "vue-cli-service lint",
+    "validate": "npm run lint && npm run unit"
+  },
+  "keywords": [
+    "frms",
+    "frost",
+    "media"
+  ],
+  "author": "Fajimi Abiola",
+  "license": "ISC",
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.js"
+  ],
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-plugin-vue": "^6.2.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "browser": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:vue/strongly-recommended",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
